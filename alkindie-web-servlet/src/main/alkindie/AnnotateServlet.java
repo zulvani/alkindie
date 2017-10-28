@@ -1,4 +1,4 @@
-package main.alkindie;
+package alkindie;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

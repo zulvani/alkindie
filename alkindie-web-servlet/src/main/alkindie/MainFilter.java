@@ -1,4 +1,4 @@
-package main.alkindie.filter;
+package alkindie;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletResponse;
@@ -8,11 +8,11 @@ public class MainFilter implements Filter {
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
-
     }
 
     @Override
-    public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+    public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse,
+                         FilterChain filterChain) throws IOException, ServletException {
         String param = servletRequest.getParameter("username");
 
         if(param != null && param.equalsIgnoreCase("block")){

@@ -8,31 +8,21 @@
          version="3.1">
 
   <display-name>Archetype Created Web Application</display-name>
+
     <servlet>
         <servlet-name>mainServlet</servlet-name>
-        <servlet-class>main.alkindie.MainServlet</servlet-class>
+        <servlet-class>alkindie.MainServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
 
-    <servlet>
-        <servlet-name>contactServlet</servlet-name>
-        <servlet-class>main.alkindie.ContactServlet</servlet-class>
-        <load-on-startup>2</load-on-startup>
-    </servlet>
-
     <servlet-mapping>
         <servlet-name>mainServlet</servlet-name>
-        <url-pattern>/hello</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>contactServlet</servlet-name>
-        <url-pattern>/contact</url-pattern>
+        <url-pattern>/main</url-pattern>
     </servlet-mapping>
 
     <filter>
         <filter-name>mainFilter</filter-name>
-        <filter-class>main.alkindie.filter.MainFilter</filter-class>
+        <filter-class>alkindie.MainFilter</filter-class>
     </filter>
 
     <filter-mapping>
